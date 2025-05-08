@@ -19,8 +19,10 @@ export const Footer = () => {
             {navItems.map((item, key) => (
               <NavItem key={key} href={item.href} text={item.text} />
             ))}
+            <NavItem href="/conditions" text="Términos y Condiciones" />
           </ul>
           <Paragraph > Todos los derechos reservados ©2025</Paragraph>
+          
         </div>
       </Container>
     </footer>
