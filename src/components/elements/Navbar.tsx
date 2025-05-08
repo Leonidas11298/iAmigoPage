@@ -4,10 +4,10 @@ import { NavItem } from "../shared/NavItem"
 import { useThemeStore } from "../../store/ThemeStore"
 
 export const navItems = [
-  { href: "#", text: "Inicio" },
-  { href: "#services", text: "Servicios" },
-  { href: "#about-us", text: "Sobre nosotros" },
-  { href: "#pricing", text: "Precios" },
+  { href: "/#", text: "Inicio" },
+  { href: "/#services", text: "Servicios" },
+  { href: "/#about-us", text: "Sobre nosotros" },
+  { href: "/#pricing", text: "Precios" },
 ]
 
 
