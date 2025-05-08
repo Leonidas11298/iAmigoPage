@@ -1,8 +1,8 @@
 import { Container } from "../shared/Container";
 import logo from "../../assets/icon.svg"
 import { navItems } from "./Navbar";
-import { NavItem } from "../shared/NavItem";
 import { Paragraph } from "../shared/Paragraph";
+import { NavItem } from "../shared/NavItem";
 
 export const Footer = () => {
   return (
@@ -17,9 +17,9 @@ export const Footer = () => {
 
           <ul className="flex gap-6 text-heading-1">
             {navItems.map((item, key) => (
-              <NavItem key={key} href={item.href} text={item.text} />
+              <NavItem key={key} to={item.to} text={item.text} />
             ))}
-            <NavItem href="/conditions" text="Términos y Condiciones" />
+            <NavItem to="/conditions" text="Términos y Condiciones" />
           </ul>
           <Paragraph > Todos los derechos reservados ©2025</Paragraph>
           
