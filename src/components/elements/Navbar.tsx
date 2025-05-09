@@ -1,6 +1,6 @@
 import { Container } from "../shared/Container"
 import logo from "../../assets/icon.svg"
-import { HasItem } from "../shared/NavItem"
+import { HasItem, NavItem } from "../shared/NavItem"
 import { useThemeStore } from "../../store/ThemeStore"
 
 export const navItems = [
@@ -8,6 +8,10 @@ export const navItems = [
   { to: "/#services", text: "Servicios" },
   { to: "/#about-us", text: "Sobre nosotros" },
   { to: '/#pricing', text: "Precios" },
+]
+
+export const navLinks = [
+  { to: '/conditions', text: "Terminos y condiciones" }
 ]
 
 
@@ -35,7 +39,10 @@ const Navbar = () => {
                             pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3
                             text-lg text-heading-2 w-full lg:justify-center lg:items-center">
               {navItems.map((item, key) => (
-                <HasItem to={item.to} text={item.text} key={key} />
+                <HasItem to={item.to} text={item.text} key={key} />        
+              ))}
+              {navLinks.map((item, key) => (
+                <NavItem to={item.to} text={item.text} key={key} />
               ))}
             </ul>
           </div>
