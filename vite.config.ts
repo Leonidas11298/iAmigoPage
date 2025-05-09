@@ -12,8 +12,5 @@ export default defineConfig({
         manualChunks: undefined,
       },
     },
-  },
-  server: {
-    historyApiFallback: true, // Esto ayuda en desarrollo con las rutas SPA
   }
 })
