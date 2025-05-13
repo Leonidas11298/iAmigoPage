@@ -4,83 +4,96 @@ import { Title } from '../shared/Title';
 import { Paragraph } from '../shared/Paragraph';
 
 const TermAndConditions: React.FC = () => {
-  const handleDownloadPDF = () => {
-    const pdfUrl = '/assets/docs/Términos y Condiciones de Uso iAmigo.pdf';
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = 'Términos y Condiciones iAmigo.pdf';
-    link.click();
-  };
-
   return (
     <section className="pb-20 relative pt-28">
       <Container>
         <div className="relative rounded-2xl overflow-hidden p-8">
+          <Title>Política de Privacidad y Términos y Condiciones de Iamigo</Title>
+          <Paragraph className="text-sm text-gray-500">
+            Fecha de última actualización: 13 de mayo de 2025
+          </Paragraph>
+
+          <Title>1. Introducción</Title>
+          <Paragraph>
+            Iamigo, accesible desde www.iamigo.com.mx, se dedica a la creación de agentes de inteligencia artificial integrados con herramientas como n8n, Google Suite y Chatwoot. Esta política de privacidad describe cómo recopilamos, utilizamos y protegemos la información personal de los usuarios que interactúan con nuestros servicios.
+          </Paragraph>
+
+          <Title>2. Información que recopilamos</Title>
+          <Paragraph>
+            Al utilizar la autenticación de Google para acceder a nuestros servicios, recopilamos la siguiente información:
+          </Paragraph>
+          <Paragraph>
+            <ul className="list-disc pl-8 mt-4">
+              <li>Dirección de correo electrónico principal: Utilizada para identificar y comunicarnos con el usuario.</li>
+              <li>Información del perfil de Google: Incluye nombre, apellidos y fotografía de perfil, utilizada para personalizar la experiencia del usuario.</li>
+            </ul>
+          </Paragraph>
+          <Paragraph>
+            Estos datos se obtienen a través de los siguientes permisos de OAuth 2.0:
+            <ul className="list-disc pl-8 mt-4">
+              <li>openid</li>
+              <li>https://www.googleapis.com/auth/userinfo.email</li>
+              <li>https://www.googleapis.com/auth/userinfo.profile</li>
+            </ul>
+          </Paragraph>
+
+          <Title>3. Uso de la información</Title>
+          <Paragraph>
+            La información recopilada se utiliza exclusivamente para:
+            <ul className="list-disc pl-8 mt-4">
+              <li>Autenticar y autorizar el acceso del usuario a nuestros servicios.</li>
+              <li>Personalizar la experiencia del usuario dentro de la plataforma.</li>
+              <li>Proporcionar soporte técnico y responder a consultas del usuario.</li>
+            </ul>
+          </Paragraph>
+
+          <Title>4. Compartición de información</Title>
+          <Paragraph>
+            Iamigo no comparte, vende ni alquila la información personal de los usuarios a terceros para fines publicitarios. Sin embargo, podemos compartir información con servicios de terceros integrados en nuestra plataforma, como Chatwoot, únicamente para proporcionar soporte técnico y mejorar la experiencia del usuario. Estos servicios están sujetos a sus propias políticas de privacidad.
+          </Paragraph>
+
+          <Title>5. Almacenamiento y seguridad de la información</Title>
+          <Paragraph>
+            Implementamos medidas de seguridad técnicas y organizativas para proteger la información personal de los usuarios contra el acceso no autorizado, la alteración, la divulgación o la destrucción. Los datos se almacenan en servidores seguros y se conservan únicamente durante el tiempo necesario para cumplir con los fines descritos en esta política.
+          </Paragraph>
+
+          <Title>6. Derechos del usuario</Title>
+          <Paragraph>
+            Los usuarios tienen derecho a:
+            <ul className="list-disc pl-8 mt-4">
+              <li>Acceder a su información personal que tenemos almacenada.</li>
+              <li>Solicitar la corrección o eliminación de su información personal.</li>
+              <li>Revocar el acceso de Iamigo a su cuenta de Google en cualquier momento a través de la configuración de su cuenta de Google.</li>
+            </ul>
+          </Paragraph>
+
+          <Title>7. Cambios en la política de privacidad</Title>
+          <Paragraph>
+            Iamigo se reserva el derecho de modificar esta política de privacidad en cualquier momento. Notificaremos a los usuarios sobre cualquier cambio significativo mediante la publicación de la nueva política en nuestro sitio web. Se recomienda a los usuarios revisar periódicamente esta política para estar informados sobre cómo protegemos su información.
+          </Paragraph>
+
+          <Title>8. Contacto</Title>
+          <Paragraph>
+            Si tienes preguntas o inquietudes sobre esta política de privacidad, puedes contactarnos en:
+            <br />
+            Correo electrónico: soporte@iamigo.com.mx
+            <br />
+            Dirección: Poza Rica Veracruz, México
+          </Paragraph>
+
           <Title>Términos y Condiciones</Title>
           <Paragraph>
-            Bienvenido a iAmigos. Estos términos y condiciones describen las reglas y regulaciones para el uso de nuestro sitio web, ubicado en www.iAmigos.com.mx.
+            Al acceder y utilizar los servicios de Iamigo, aceptas cumplir con los siguientes términos y condiciones:
           </Paragraph>
           <Paragraph>
-            Al acceder a este sitio web, asumimos que aceptas estos términos y condiciones. No continúes utilizando iAmigos si no estás de acuerdo con todos los términos y condiciones establecidos en esta página.
-          </Paragraph>
-
-          <Title>Licencia</Title>
-          <Paragraph>
-            A menos que se indique lo contrario, iAmigos y/o sus licenciantes poseen los derechos de propiedad intelectual de todo el material en iAmigos. Todos los derechos de propiedad intelectual están reservados. Puedes acceder a este material desde iAmigos para tu uso personal sujeto a las restricciones establecidas en estos términos y condiciones.
-          </Paragraph>
-
-          <Paragraph>
-            No debes:
             <ul className="list-disc pl-8 mt-4">
-              <li>Republicar material de iAmigos</li>
-              <li>Vender, alquilar o sublicenciar material de iAmigos</li>
-              <li>Reproducir, duplicar o copiar material de iAmigos</li>
-              <li>Redistribuir contenido de iAmigos</li>
+              <li><strong>Uso aceptable:</strong> Te comprometes a utilizar nuestros servicios de manera legal y ética, sin infringir los derechos de terceros ni realizar actividades que puedan dañar, deshabilitar o sobrecargar nuestros servicios.</li>
+              <li><strong>Propiedad intelectual:</strong> Todos los contenidos y materiales disponibles en Iamigo, incluidos, entre otros, textos, gráficos, logotipos y software, son propiedad de Iamigo o de sus licenciantes y están protegidos por las leyes de propiedad intelectual.</li>
+              <li><strong>Limitación de responsabilidad:</strong> Iamigo no será responsable de ningún daño directo, indirecto, incidental, especial o consecuente que resulte del uso o la imposibilidad de uso de nuestros servicios.</li>
+              <li><strong>Modificaciones:</strong> Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Las modificaciones entrarán en vigor inmediatamente después de su publicación en nuestro sitio web.</li>
+              <li><strong>Ley aplicable:</strong> Estos términos y condiciones se rigen por las leyes de México, y cualquier disputa relacionada con estos términos estará sujeta a la jurisdicción exclusiva de los tribunales de Veracruz, Veracruz.</li>
             </ul>
           </Paragraph>
-
-          <Title>Uso de APIs de Google</Title>
-          <Paragraph>
-            Nuestra plataforma utiliza las siguientes APIs de Google:
-            <ul className="list-disc pl-8 mt-4">
-              <li>Google Calendar API: Para la gestión y sincronización de calendarios</li>
-              <li>Google Drive API: Para el almacenamiento y gestión de documentos</li>
-              <li>Google Meet API: Para videoconferencias y reuniones virtuales</li>
-              <li>Google Gmail API: Para la gestión de comunicaciones por correo electrónico</li>
-            </ul>
-          </Paragraph>
-
-          <Paragraph>
-            Al utilizar nuestros servicios, aceptas las políticas de privacidad y términos de servicio de Google para estas APIs. Los datos recopilados a través de estas APIs se manejan de acuerdo con nuestra política de privacidad y los estándares de Google.
-          </Paragraph>
-
-          <Title>Cookies y Tecnologías de Seguimiento</Title>
-          <Paragraph>
-            Utilizamos cookies y tecnologías similares para mejorar tu experiencia en nuestro sitio web. Al continuar utilizando iAmigos, aceptas el uso de cookies de acuerdo con nuestra política de privacidad.
-          </Paragraph>
-
-          <Title>Descargo de Responsabilidad</Title>
-          <Paragraph>
-            La información proporcionada en este sitio web es solo para fines informativos generales. iAmigos no hace representaciones ni garantías de ningún tipo, expresas o implícitas, sobre la integridad, precisión, fiabilidad, idoneidad o disponibilidad con respecto al sitio web o la información, productos, servicios o gráficos relacionados contenidos en el sitio web para cualquier propósito.
-          </Paragraph>
-
-          <Title>Limitación de Responsabilidad</Title>
-          <Paragraph>
-            En ningún caso iAmigos, ni sus directores, empleados, socios, agentes, proveedores o afiliados serán responsables por cualquier daño indirecto, incidental, especial, consecuente o punitivo, incluyendo sin limitación, pérdida de beneficios, datos, uso, buena voluntad u otras pérdidas intangibles.
-          </Paragraph>
-
-          <Paragraph>
-            Para más detalles, por favor contáctanos en soporte@iamigo.com.mx
-          </Paragraph>
-
-          <div className="mt-8 flex justify-center">
-            <button
-              onClick={handleDownloadPDF}
-              className="px-6 py-3 bg-violet-600 text-white rounded-full hover:bg-violet-700 transition-colors"
-            >
-              Descargar Términos y Condiciones Completos (PDF)
-            </button>
-          </div>
         </div>
       </Container>
     </section>
