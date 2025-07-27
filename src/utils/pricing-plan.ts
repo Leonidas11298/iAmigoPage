@@ -1,7 +1,7 @@
 export const pricingPlans = [
     {
       title: "iAmigo Citas",
-      price: "$3000 mxn al mes",
+      price: "Desde $5 MXN por conversacion",
       features: [
         "Gestion de citas en tiempo real",
         "Gestion de clientes",
@@ -10,9 +10,9 @@ export const pricingPlans = [
     },
     {
       title: "iAmigo Digital",
-      price: "$8000 mxn al mes",
+      price: "$8000 MXN (unico pago)",
       features: [
-        "Todo en iAmigo Citas",
+        "Prueba 1 mes gratis iAmigo Citas",
         "Creacion de landing page",
         "Reporte de citas al mes agendadas",
         "Soporte 24/7"

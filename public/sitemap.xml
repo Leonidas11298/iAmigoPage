@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.iamigo.com.mx/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.iamigo.com.mx/servicios</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.iamigo.com.mx/sobre-nosotros</loc>
+    <priority>0.80</priority>
+  </url>
+    <url>
+    <loc>https://www.iamigo.com.mx/precios</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.iamigo.com.mx/conditions</loc>
+    <priority>0.70</priority>
+  </url>
+</urlset>
