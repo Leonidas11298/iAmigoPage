@@ -9,6 +9,7 @@ import { Pricing } from "./components/sections/Pricing";
 import { Services } from "./components/sections/Services";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TermAndConditions from "./components/sections/TermAndConditions";
+import ThankYouPage from "./components/sections/ThankYouPage";
 
 function App() {
   return (
@@ -34,6 +35,12 @@ function App() {
               <TermAndConditions />
             </ConditionsPage>
           }
+        />
+        <Route 
+        path="/successpay"
+        element={
+          <ThankYouPage />
+        }
         />
       </Routes>
     </Router>
