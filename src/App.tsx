@@ -10,6 +10,7 @@ import { Services } from "./components/sections/Services";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TermAndConditions from "./components/sections/TermAndConditions";
 import ThankYouPage from "./components/sections/ThankYouPage";
+import Community from "./components/sections/Comunity";
 
 function App() {
   return (
@@ -41,6 +42,12 @@ function App() {
         element={
           <ThankYouPage />
         }
+        />
+        <Route
+          path="/Community"
+          element={
+              <Community />
+          }
         />
       </Routes>
     </Router>
