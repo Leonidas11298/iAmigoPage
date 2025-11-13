@@ -10,7 +10,7 @@ import { FaTelegram } from "react-icons/fa";
 
 const links = [
   { name: 'Instagram', url: 'https://instagram.com/iamigo.mx', logo: IoLogoInstagram },
-  { name: 'Facebook', url: 'https://facebook.com/', logo: FaFacebook },
+  { name: 'Facebook', url: 'https://facebook.com/manuel.suarez.422440', logo: FaFacebook },
   { name: 'Telegram', url: 'https://t.me/aprenden8nfacil', logo: FaTelegram },
   { name: 'Tiktok', url: 'https://tiktok.com/@manuel_s112', logo: FaTiktok },
 ];
