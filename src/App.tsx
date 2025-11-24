@@ -11,6 +11,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TermAndConditions from "./components/sections/TermAndConditions";
 import ThankYouPage from "./components/sections/ThankYouPage";
 import Community from "./components/sections/Comunity";
+import CancellationPage from "./components/sections/CancellationPage";
+import { RemoveData } from "./components/sections/removeData";
 
 function App() {
   return (
@@ -49,6 +51,18 @@ function App() {
               <Community />
           }
         />
+        <Route
+          path="/cancellation"
+          element={
+              <CancellationPage />
+          }
+        />
+        <Route
+          path="/removedata"
+          element={
+             <RemoveData /> 
+          }
+          />
       </Routes>
     </Router>
   );
