@@ -49,7 +49,7 @@ export const Pricing = () => {
                     ))}
                   </ul>
                   <div className="mt-8">
-                    <BtnLink href="https://wa.me/527822462375" className="min-w-max text-white align-middle" text="Quiero este plan" />
+                    <BtnLink href="https://wa.me/525621212799" className="min-w-max text-white align-middle" text="Quiero este plan" />
                   </div>
                 </div>
               </div>

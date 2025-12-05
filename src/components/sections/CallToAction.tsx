@@ -23,7 +23,7 @@ export const CTA = () => {
                 ineficientes. ¡Únete a nosotros y lleva tu negocio al siguiente nivel!
             </Paragraph>
             <div className="mx-auto max-w-md sm:max-w-xl pt-10 dark:text-white">
-            <BtnLink href="https://wa.me/527822462375" className="min-w-max text-white align-middle" text="Comienza Ahora" />
+            <BtnLink href="https://wa.me/525621212799" className="min-w-max text-white align-middle" text="Comienza Ahora" />
             </div>
           </div>
         </div>

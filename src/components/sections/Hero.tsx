@@ -33,7 +33,7 @@ export const Hero = () => {
           <div className="mt-10 w-full flex max-w-md mx-auto lg:mx-0">
             <div className="flex sm:flex-row flex-col gap-5 w-full">
               <div className="items-center">
-                <BtnLink href="https://wa.me/527822462375" className="min-w-max text-white align-middle" text="Consultoria gratuita" />
+                <BtnLink href="https://wa.me/525621212799" className="min-w-max text-white align-middle" text="Consultoria gratuita" />
               </div>
             </div>
           </div>
